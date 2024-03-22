@@ -1,4 +1,4 @@
-﻿/* Park Suyeon
+/* Park Suyeon
 * <기본 자료형>
 * 설명 : 정수, 실수, 문자, 문자열, 불
 */
@@ -46,7 +46,7 @@ internal class DataType
         Console.WriteLine("-- 문자 출력 --");
         Console.WriteLine(a);
         Console.WriteLine(A);
-        Console.WriteLine("'a' + 'A --> " + ('a'+'A'));     // 문자 + 문자는 덧셈 연산 수행함
+        Console.WriteLine("'a' + 'A --> " + ('a' + 'A'));     // 문자 + 문자는 덧셈 연산 수행함
         Console.WriteLine();
 
         // 문자열
@@ -57,9 +57,9 @@ internal class DataType
         Console.WriteLine(s1 + s2);
         Console.WriteLine("가나다" + "라마바" + "사아차카타파하");
 
-        Console.WriteLine();    
+        Console.WriteLine();
 
-        Console.WriteLine("-- 이스케이프 문자 -- ");    
+        Console.WriteLine("-- 이스케이프 문자 -- ");
         Console.WriteLine("good\t\t morning\t!");
         Console.WriteLine("\"\'\\");
 
@@ -70,5 +70,23 @@ internal class DataType
         Console.WriteLine("안녕하세요"[1]);
         Console.WriteLine("안녕하세요"[2]);
         // --> 문자열이 5개인데 100번째 글자 출력하라하면? 런타임 에러
+
+        Console.WriteLine();
+
+        // 불
+        Console.WriteLine(" -- 불과 비교 연산자 -- ");
+        Console.WriteLine("52 < 273 --> " + (52 < 273));
+        Console.WriteLine("52 > 273 --> " + (52 > 273));
+        Console.WriteLine("!(52 < 273) --> " + !(52 < 273));    // 논리 부정 연산자 ! (단항연산자)
+        Console.WriteLine("!(52 > 273) --> " + !(52 > 273));
+
+        Console.WriteLine();
+
+        Console.WriteLine(" -- 불과 논리 연산자 -- ");
+        // DataTime.Now.Hour --> 현재 시 만 가져옴
+        Console.Write("DateTime.Now.Hour < 3 || 8 < DateTime.Now.Hour --> ");
+        Console.WriteLine(DateTime.Now.Hour < 3 || 8 < DateTime.Now.Hour);
+        Console.Write("3 < DateTime.Now.Hour && DateTime.Now.Hour < 8 --> ");
+        Console.WriteLine(3 < DateTime.Now.Hour && DateTime.Now.Hour < 8);
     }
 }
