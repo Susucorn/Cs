@@ -60,7 +60,9 @@ internal class DataType
         Console.WriteLine();
 
         Console.WriteLine("-- 이스케이프 문자 -- ");
+        // 탭 만큼 띄움
         Console.WriteLine("good\t\t morning\t!");
+        // 큰따옴표, 작은 따옴표, 역슬래시 출력
         Console.WriteLine("\"\'\\");
 
         Console.WriteLine();
